@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaila Brand - Website Mockup</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="mock-banner">
+  <span><b>MOCKUP</b> · Kaila Brand - Navigational prototype v1.2 · All pages</span>
+  <span>WhatsApp &amp; Instagram connected · EN ready</span>
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav">
+  <a href="#home" class="nav__logo"><img src="assets/img/logo-kaila-brand.png" alt="Kaila Brand logo"><span class="nav__logo-text">Kaila Brand</span></a>
+  <nav class="nav__links">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#collections">Collections</a>
+    <a href="#cali">Cali</a>
+    <a href="#pacific">Pacific</a>
+    <a href="#custom">Custom Orders</a>
+    <a href="#story">Our Story</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__actions">
+    <div class="lang-pill">
+      <button class="on">EN</button>
+      <button>ES</button>
+    </div>
+    <button class="btn btn--tierra" data-nav="collections">Explore the Cards</button>
+  </div>
+</header>
+
+<!-- ================= PAGE : DESIGN SYSTEM ================= -->
+<section class="page" id="page-design">
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">Brand Guidelines</span>
+      <h2 class="section-title">Kaila Brand Design System</h2>
+      <p class="lead">A palette drawn from Colombian landscapes - the sepia ink of the engraving, the gold of the postmark, the cream of the paper - with accent tones from Cali and the Pacific.</p>
+
+      <div style="display:flex;align-items:center;gap:22px;margin-top:40px;flex-wrap:wrap">
+        <img src="assets/img/logo-kaila-brand.png" alt="Kaila Brand logo" style="width:110px;height:110px;border-radius:50%;border:2px solid var(--oro)">
+        <p style="max-width:520px;color:var(--tinta-soft)">The palette is extracted directly from the official logo: sepia engraving ink, postmark gold, paper cream. The Tierra, Verde and Pacífico accents come from the collection landscapes.</p>
+      </div>
+      <div class="grid-4" style="margin-top:36px">
+        <div class="ds-swatch" style="background:#4A2C1A"><strong>Sepia</strong><small>#4A2C1A · Logo ink, text, footer</small></div>
+        <div class="ds-swatch" style="background:#6B4226"><strong>Cacao</strong><small>#6B4226 · Illustrations, light sepia</small></div>
+        <div class="ds-swatch" style="background:#C89B3C;color:#4A2C1A"><strong>Oro</strong><small>#C89B3C · Postmark gold, details</small></div>
+        <div class="ds-swatch" style="background:#F7F0E1;color:#4A2C1A;border:1px solid var(--borde)"><strong>Crema</strong><small>#F7F0E1 · Paper, main background</small></div>
+        <div class="ds-swatch" style="background:#C2572B"><strong>Tierra</strong><small>#C2572B · Action buttons</small></div>
+        <div class="ds-swatch" style="background:#1F5D3A"><strong>Verde</strong><small>#1F5D3A · Emotional sections</small></div>
+        <div class="ds-swatch" style="background:#0F6B7A"><strong>Pacífico</strong><small>#0F6B7A · Pacific Collection</small></div>
+        <div class="ds-swatch" style="background:#EFDDB0;color:#4A2C1A"><strong>Oro Suave</strong><small>#EFDDB0 · Soft backgrounds, badges</small></div>
+      </div>
+
+      <div class="split" style="margin-top:80px">
+        <div class="ds-type">
+          <span class="eyebrow">Typography</span>
+          <h1>Fraunces - display &amp; editorial</h1>
+          <p class="sample-serif">&ldquo;The warm elegance of a Colombian postcard.&rdquo;</p>
+        </div>
+        <div class="ds-type">
+          <span class="eyebrow" style="color:var(--pacifico)">Interface</span>
+          <h1 style="font-family:var(--font-body);font-size:2rem;font-weight:700">Inter - text &amp; UI</h1>
+          <p class="sample-sans">A readable, modern interface designed for travel and effortless ordering. Body text 16–18px, rounded buttons, generous 18px radius.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:70px">
+        <span class="eyebrow">Components</span>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:20px">
+          <button class="btn btn--tierra">Primary button</button>
+          <a class="btn btn--verde" href="https://wa.me/573236543885" target="_blank">Order on WhatsApp</a>
+          <button class="btn btn--ghost">Secondary button</button>
+          <button class="btn btn--blanco" style="border:1px solid var(--borde)">View collection</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : HOME ================= -->
+<section class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero__inner">
+      <svg class="hero__stamp" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+        <circle cx="100" cy="100" r="88" fill="none" stroke="#C89B3C" stroke-width="2.5" stroke-dasharray="3 7"/>
+        <circle cx="100" cy="100" r="58" fill="none" stroke="#C89B3C" stroke-width="1.5"/>
+        <text fill="#C89B3C" font-size="15" font-weight="600" letter-spacing="4" font-family="Inter,sans-serif">
+          <textPath href="#circ">KAILA BRAND &#10022; CALI &#183; COLOMBIA &#10022; POSTCARDS &#10022;</textPath>
+        </text>
+        <path d="M100 76 c-8-10-24-6-24 8 0 11 13 18 24 28 11-10 24-17 24-28 0-14-16-18-24-8z" fill="#C89B3C"/>
+      </svg>
+      <span class="eyebrow">Postcards from Colombia</span>
+      <h1>Take a <em>piece of Colombia</em> with you</h1>
+      <p>Kaila Brand creates collectible postcards inspired by the landscapes, culture and soul of Colombia - from Cali to the Pacific Ocean.</p>
+      <div class="hero__cta">
+        <button class="btn btn--tierra" data-nav="collections">Discover the collections</button>
+        <button class="btn btn--ghost" style="color:#fff;border-color:#fff" data-nav="story">Our story</button>
+      </div>
+      <div class="hero__badges">
+        <div><strong>3</strong>Active collections</div>
+        <div><strong>24</strong>Original designs</div>
+        <div><strong>100%</strong>Inspired by Colombia</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-band" aria-hidden="true">
+    <i style="background:#C2572B"></i><i style="background:#C89B3C"></i><i style="background:#1F5D3A"></i><i style="background:#0F6B7A"></i>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee__track">
+      <span><i>&#9670;</i>Cali, salsa capital of the world</span>
+      <span><i>&#9670;</i>Colombian Pacific coast</span>
+      <span><i>&#9670;</i>Original collectible designs</span>
+      <span><i>&#9670;</i>Custom orders for events &amp; brands</span>
+      <span><i>&#9670;</i>International shipping</span>
+      <span><i>&#9670;</i>Cali, salsa capital of the world</span>
+      <span><i>&#9670;</i>Colombian Pacific coast</span>
+      <span><i>&#9670;</i>Original collectible designs</span>
+      <span><i>&#9670;</i>Custom orders for events &amp; brands</span>
+      <span><i>&#9670;</i>International shipping</span>
+    </div>
+  </div>
+
+  <!-- Featured collections -->
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">Our collections</span>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px">
+        <h2 class="section-title">Three worlds, one Colombia</h2>
+        <button class="btn btn--ghost" data-nav="collections">Full catalog &rarr;</button>
+      </div>
+      <div class="grid-3" style="margin-top:36px">
+        <article class="postcard-card">
+          <div class="postcard-card__img">
+            <img src="assets/img/cali-salsa.jpg" alt="Cali Collection">
+            <span class="postcard-card__tag">Collection</span>
+          </div>
+          <div class="postcard-card__body">
+            <h3>Cali</h3>
+            <p>Salsa, culture and iconic places of the Valle del Cauca capital.</p>
+            <div class="postcard-card__foot">
+              <span class="price">8 designs</span>
+              <button class="mini-btn" data-nav="cali">Explore</button>
+            </div>
+          </div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img">
+            <img src="assets/img/pacific-turquoise.jpg" alt="Pacific Collection">
+            <span class="postcard-card__tag">Collection</span>
+          </div>
+          <div class="postcard-card__body">
+            <h3>Colombian Pacific</h3>
+            <p>Wild beaches, communities and the natural beauty of the Pacific Ocean.</p>
+            <div class="postcard-card__foot">
+              <span class="price">8 designs</span>
+              <button class="mini-btn" data-nav="pacific">Explore</button>
+            </div>
+          </div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img">
+            <img src="assets/img/cano-cristales.jpg" alt="Destinations Collection">
+            <span class="postcard-card__tag">New</span>
+          </div>
+          <div class="postcard-card__body">
+            <h3>Colombian Destinations</h3>
+            <p>Iconic experiences and landscapes from across the country, to collect.</p>
+            <div class="postcard-card__foot">
+              <span class="price">8 designs</span>
+              <button class="mini-btn" data-nav="collections">Explore</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Kaila -->
+  <div class="section" style="background:var(--verde-soft)">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--verde)">Why Kaila Brand</span>
+      <h2 class="section-title">A souvenir that tells a real story</h2>
+      <p class="lead">Traditional souvenirs don't always reflect the local identity, culture and places travelers experienced. Our postcards are small, affordable works of art - made to be kept, gifted and sent.</p>
+      <div class="values">
+        <div class="value">
+          <div class="value__ico" style="background:var(--oro-soft)">&#127912;</div>
+          <h4>Authentic design</h4><p>Every card is an original illustration inspired by the real Colombia.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:var(--pacifico-soft)">&#127754;</div>
+          <h4>Local &amp; conscious</h4><p>Quality printing that values communities and places.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:var(--verde-soft)">&#128140;</div>
+          <h4>Made to be gifted</h4><p>A light, meaningful present for travelers and collectors.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:#EFDDB0">&#127976;</div>
+          <h4>For professionals</h4><p>Custom postcards for hotels, restaurants, events and brands.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom band -->
+  <div class="section">
+    <div class="wrap">
+      <div class="split split--rev">
+        <div>
+          <span class="eyebrow">Custom orders</span>
+          <h2 class="section-title">Your place, your event, your card</h2>
+          <p class="lead">We create bespoke postcards for businesses, hotels, restaurants and organizations. A memorable detail for your clients and guests.</p>
+          <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+            <button class="btn btn--tierra" data-nav="custom">Request a quote</button>
+            <button class="btn btn--ghost">See examples</button>
+          </div>
+        </div>
+        <div class="split__img"><img src="assets/img/colombia-colorful-street.jpg" alt="Colorful Colombian streets"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <p>&ldquo;To travel is to discover. To bring home a Kaila card is to keep the memory forever.&rdquo;</p>
+    <small>&mdash; The Kaila Brand spirit</small>
+  </div>
+</section>
+
+<!-- ================= PAGE : ABOUT ================= -->
+<section class="page" id="page-about">
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">About us</span>
+      <h2 class="section-title">Born in Cali, inspired by all of Colombia</h2>
+      <div class="split" style="margin-top:20px">
+        <div class="split__img"><img src="assets/img/cristo-rey.jpg" alt="Cristo Rey, Cali"></div>
+        <div>
+          <p class="lead">Kaila Brand is a Colombian brand creating collectible postcards inspired by the landscapes, culture, people and identity of Colombia — with a special focus on Cali and the Colombian Pacific.</p>
+          <p style="margin-top:16px;color:var(--tinta-soft)">Our goal: to create a tangible way to remember, share and discover Colombia through beautifully designed postcards. Every card is an invitation to slow down, write and send - like before, but better.</p>
+          <div style="margin-top:30px;display:flex;gap:14px;flex-wrap:wrap">
+            <button class="btn btn--tierra" data-nav="story">Discover our stories</button>
+            <button class="btn btn--ghost" data-nav="collections">See the cards</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--pacifico-soft)">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--pacifico)">Our values</span>
+      <h2 class="section-title">What drives us</h2>
+      <div class="values">
+        <div class="value">
+          <div class="value__ico" style="background:#fff">&#127464;&#127476;</div>
+          <h4>Colombian identity</h4><p>Celebrating Colombia's culture, places and people with respect and pride.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:var(--oro-soft)">&#9998;</div>
+          <h4>Design craft</h4><p>Every illustration is carefully crafted like a small work of art.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:var(--verde-soft)">&#129309;</div>
+          <h4>Communities</h4><p>Shining a light on Pacific communities and local creators.</p>
+        </div>
+        <div class="value">
+          <div class="value__ico" style="background:var(--pacifico-soft)">&#9992;</div>
+          <h4>Travel spirit</h4><p>Objects that tell travel stories - to keep or to send.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap" style="text-align:center">
+      <h2 class="section-title">Who trusts us</h2>
+      <p class="lead" style="margin:0 auto">International tourists, expats, nostalgic Colombians, hotels, restaurants and cultural organizations.</p>
+      <div style="display:flex;gap:34px;justify-content:center;margin-top:44px;flex-wrap:wrap;color:var(--tinta-soft);font-weight:600">
+        <span>Hotels &amp; hostels</span><span>&middot;</span><span>Restaurants</span><span>&middot;</span>
+        <span>Travel agencies</span><span>&middot;</span><span>Cultural organizations</span><span>&middot;</span><span>Events</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : COLLECTIONS ================= -->
+<section class="page" id="page-collections">
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">Full catalog</span>
+      <h2 class="section-title">All our postcards</h2>
+      <p class="lead">Filter by collection, discover the story behind each design, and order directly through WhatsApp.</p>
+
+      <div style="display:flex;gap:10px;margin:34px 0 36px;flex-wrap:wrap">
+        <button class="mini-btn" style="background:var(--tinta);color:#fff;border-color:var(--tinta)">All</button>
+        <button class="mini-btn">Cali</button>
+        <button class="mini-btn">Pacific</button>
+        <button class="mini-btn">Destinations</button>
+        <button class="mini-btn">New</button>
+      </div>
+
+      <div class="grid-4">
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cali-salsa.jpg" alt="Cali salsa dancers"><span class="postcard-card__tag">Cali</span></div>
+          <div class="postcard-card__body"><h3>Noche de Salsa</h3><p>Dancers of the Feria de Cali under the lights.</p>
+          <div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cristo-rey.jpg" alt="Cristo Rey statue"><span class="postcard-card__tag">Cali</span></div>
+          <div class="postcard-card__body"><h3>Cristo Rey</h3><p>The guardian of Cali watching over the whole city.</p>
+          <div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-turquoise.jpg" alt="Turquoise sea"><span class="postcard-card__tag">Pacific</span></div>
+          <div class="postcard-card__body"><h3>Mar Turquesa</h3><p>The crystal-clear waters of Nuquí, a hidden paradise.</p>
+          <div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-sunset.jpg" alt="Pacific sunset"><span class="postcard-card__tag">Pacific</span></div>
+          <div class="postcard-card__body"><h3>Atardecer Pacífico</h3><p>The most spectacular sunset in Colombia.</p>
+          <div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cali-skyline.jpg" alt="Cali skyline"><span class="postcard-card__tag">Cali</span></div>
+          <div class="postcard-card__body"><h3>Valle del Cauca</h3><p>The green valley seen from the heights of Cali.</p>
+          <div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-beach.jpg" alt="Wild beach"><span class="postcard-card__tag">Pacific</span></div>
+          <div class="postcard-card__body"><h3>Playa Escondida</h3><p>The wild beaches of Chocó, between jungle and ocean.</p>
+          <div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cano-cristales.jpg" alt="Caño Cristales river"><span class="postcard-card__tag">New</span></div>
+          <div class="postcard-card__body"><h3>Caño Cristales</h3><p>The five-color river, a wonder of Colombia.</p>
+          <div class="postcard-card__foot"><span class="price">$5,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/colombia-colorful-street.jpg" alt="Colorful streets"><span class="postcard-card__tag">New</span></div>
+          <div class="postcard-card__body"><h3>Calles de Color</h3><p>The colorful facades of Colombia's historic centers.</p>
+          <div class="postcard-card__foot"><span class="price">$5,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:56px">
+        <p style="color:var(--tinta-soft);margin-bottom:16px">Can't find your favorite place? Message us on WhatsApp.</p>
+        <a class="btn btn--verde" href="https://wa.me/573236543885" target="_blank">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : CALI COLLECTION ================= -->
+<section class="page" id="page-cali">
+  <div class="collection-hero collection-hero--cali">
+    <div class="collection-hero__inner">
+      <span class="eyebrow" style="color:var(--oro-soft)">Collection &middot; Cali</span>
+      <h1>Salsa runs through our veins</h1>
+      <p>Postcards inspired by Cali: its culture, its salsa, its iconic places and the unique energy of the Valle del Cauca capital.</p>
+      <div style="margin-top:26px;display:flex;gap:14px;flex-wrap:wrap">
+        <button class="btn btn--tierra">View the 8 designs</button>
+        <a class="btn btn--blanco" href="https://wa.me/573236543885" target="_blank">Order the full set</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">The story</span>
+      <div class="split">
+        <div>
+          <h2 class="section-title">Cali, the city that dances</h2>
+          <p class="lead">Nicknamed the &ldquo;salsa capital of the world&rdquo;, Cali lives to the rhythm of music. Every card in this collection captures a moment: a dance step, a valley landscape, an iconic landmark.</p>
+          <p style="margin-top:16px;color:var(--tinta-soft)">From Cristo Rey overlooking the city to the salsa nights of Juanchito, the Cali collection is a vibrant tribute to caleño identity.</p>
+        </div>
+        <div class="split__img"><img src="assets/img/cali-salsa-dancers.jpg" alt="Salsa dancers in Cali"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--crema-2)">
+    <div class="wrap">
+      <span class="eyebrow">The designs</span>
+      <h2 class="section-title">Cali Series - 8 cards</h2>
+      <div class="grid-4" style="margin-top:34px">
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cali-salsa.jpg" alt="Noche de Salsa postcard"></div>
+          <div class="postcard-card__body"><h3>Noche de Salsa</h3><div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cristo-rey.jpg" alt="Cristo Rey postcard"></div>
+          <div class="postcard-card__body"><h3>Cristo Rey</h3><div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cali-skyline.jpg" alt="Valle del Cauca postcard"></div>
+          <div class="postcard-card__body"><h3>Valle del Cauca</h3><div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/cali-salsa-dancers.jpg" alt="Bailarines postcard"></div>
+          <div class="postcard-card__body"><h3>Bailarines</h3><div class="postcard-card__foot"><span class="price">$4,000 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+      </div>
+      <p style="color:var(--tinta-soft);margin-top:26px;font-size:.9rem">+ 4 exclusive designs available in the full shop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : PACIFIC COLLECTION ================= -->
+<section class="page" id="page-pacific">
+  <div class="collection-hero collection-hero--pacifico">
+    <div class="collection-hero__inner">
+      <span class="eyebrow" style="color:#BFE6EC">Collection &middot; Colombian Pacific</span>
+      <h1>Where the jungle meets the ocean</h1>
+      <p>Postcards inspired by the Pacific coast: its wild landscapes, its communities, its volcanic beaches and a natural beauty unlike anywhere else on Earth.</p>
+      <div style="margin-top:26px;display:flex;gap:14px;flex-wrap:wrap">
+        <button class="btn btn--tierra">View the 8 designs</button>
+        <a class="btn btn--blanco" href="https://wa.me/573236543885" target="_blank">Order the full set</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">The story</span>
+      <div class="split split--rev">
+        <div class="split__img"><img src="assets/img/pacific-sunset.jpg" alt="Sunset over the Pacific"></div>
+        <div>
+          <h2 class="section-title">The Pacific, an authentic Colombia</h2>
+          <p class="lead">A region of exceptional cultural and natural richness, the Colombian Pacific is home to Afro-Colombian communities whose art, music and traditions deeply inspire Kaila Brand.</p>
+          <p style="margin-top:16px;color:var(--tinta-soft)">Humpback whales, black-sand beaches, mangroves and coconut palms: every card is an open window onto this preserved territory.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--pacifico-soft)">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--pacifico)">The designs</span>
+      <h2 class="section-title">Pacific Series — 8 cards</h2>
+      <div class="grid-4" style="margin-top:34px">
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-turquoise.jpg" alt="Mar Turquesa postcard"></div>
+          <div class="postcard-card__body"><h3>Mar Turquesa</h3><div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-sunset.jpg" alt="Atardecer Pacifico postcard"></div>
+          <div class="postcard-card__body"><h3>Atardecer Pacífico</h3><div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-beach.jpg" alt="Playa Escondida postcard"></div>
+          <div class="postcard-card__body"><h3>Playa Escondida</h3><div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+        <article class="postcard-card">
+          <div class="postcard-card__img"><img src="assets/img/pacific-turquoise.jpg" alt="Nuqui Paradise postcard" style="filter:hue-rotate(12deg)"></div>
+          <div class="postcard-card__body"><h3>Nuquí Paradise</h3><div class="postcard-card__foot"><span class="price">$4,500 COP</span><a class="mini-btn" href="https://wa.me/573236543885" target="_blank">Order</a></div></div>
+        </article>
+      </div>
+      <p style="color:var(--tinta-soft);margin-top:26px;font-size:.9rem">+ 4 exclusive designs available in the full shop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : CUSTOM ORDERS ================= -->
+<section class="page" id="page-custom">
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">Custom orders</span>
+      <h2 class="section-title">Postcards made in your image</h2>
+      <p class="lead">Events, restaurants, hotels, brands, organizations: we create personalized postcards that become gifts, souvenirs or unforgettable event details.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3>Let's talk</h3>
+          <p>Tell us about your project via the form or WhatsApp: place, style, quantity, budget.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3>We draw</h3>
+          <p>Our team creates unique illustration proposals inspired by your world.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3>You receive</h3>
+          <p>Production and delivery of your cards, with your branding subtly integrated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--crema-2)">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow">Request form</span>
+          <h2 class="section-title">Tell us about your project</h2>
+          <p class="lead" style="margin-bottom:26px">We reply within 24 business hours. Free, no-obligation quote.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item__ico" style="background:#E7F8EE">&#128172;</div>
+              <div><strong>Direct WhatsApp</strong><span>+57 323 654 3885 · fast reply</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__ico" style="background:var(--oro-soft)">&#128248;</div>
+              <div><strong>Instagram</strong><span>@postcardsbykaila · inspiration &amp; news</span></div>
+            </div>
+          </div>
+        </div>
+        <form class="form-card">
+          <div class="form-grid">
+            <div class="field">
+              <label>Full name</label>
+              <input type="text" placeholder="Maria Fernanda">
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label>Project type</label>
+              <select>
+                <option>Event</option>
+                <option>Restaurant / Hotel</option>
+                <option>Brand / Company</option>
+                <option>Cultural organization</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Estimated quantity</label>
+              <select>
+                <option>100 – 500</option>
+                <option>500 – 1,000</option>
+                <option>1,000 – 5,000</option>
+                <option>5,000 +</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label>Your message</label>
+              <textarea rows="5" placeholder="Describe your place, your event, the style you're looking for..."></textarea>
+            </div>
+          </div>
+          <button type="button" class="btn btn--tierra" style="margin-top:22px">Send request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE : OUR STORY ================= -->
+<section class="page" id="page-story">
+  <div class="section">
+    <div class="wrap" style="text-align:center;max-width:840px">
+      <span class="eyebrow" style="justify-content:center">Our Story &middot; Colombia</span>
+      <h2 class="section-title">Every card tells a story</h2>
+      <p class="lead" style="margin:0 auto">Behind every Kaila Brand design lies a place, a community, a memory. This section of the website is dedicated to the stories that inspire our collections.</p>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__img"><img src="assets/img/colombia-colorful-street.jpg" alt="Colorful Colombian architecture"></div>
+        <div>
+          <span class="eyebrow">Chapter 01</span>
+          <h2 class="section-title">The colors of Colombia</h2>
+          <p class="lead">From the alleys of Cartagena to the mountains of the Valle, the Colombian palette is our first source of inspiration. Every shade in our cards is drawn from the real landscape.</p>
+        </div>
+      </div>
+
+      <div class="split split--rev" style="margin-top:90px">
+        <div class="split__img"><img src="assets/img/pacific-beach.jpg" alt="Pacific beach"></div>
+        <div>
+          <span class="eyebrow" style="color:var(--pacifico)">Chapter 02</span>
+          <h2 class="section-title">The communities of the Pacific</h2>
+          <p class="lead">The Pacific Collection pays tribute to Afro-Colombian communities, guardians of a living culture: currulao music, craftsmanship, traditional fishing and whale festivals.</p>
+        </div>
+      </div>
+
+      <div class="split" style="margin-top:90px">
+        <div class="split__img"><img src="assets/img/cali-salsa.jpg" alt="Cali salsa"></div>
+        <div>
+          <span class="eyebrow" style="color:var(--verde)">Chapter 03</span>
+          <h2 class="section-title">Salsa, a living heritage</h2>
+          <p class="lead">Declared Intangible Cultural Heritage of Colombia, caleño salsa is far more than a dance: it is the language of the city. Our cards capture its energy and grace.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <p>&ldquo;We don't draw souvenirs. We draw Colombia as it lives, dances and breathes.&rdquo;</p>
+    <small>&mdash; Kaila Brand</small>
+  </div>
+</section>
+
+<!-- ================= PAGE : CONTACT ================= -->
+<section class="page" id="page-contact">
+  <div class="section">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">Write to us - we love it</h2>
+      <p class="lead" style="margin-bottom:44px">Questions about availability, prices, shipping or custom orders - we reply fast and with a smile.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a class="contact-item" href="https://wa.me/573236543885" target="_blank">
+            <div class="contact-item__ico" style="background:#E7F8EE">&#128172;</div>
+            <div><strong>WhatsApp</strong><span>+57 323 654 3885 · 7 days a week</span></div>
+          </a>
+          <a class="contact-item" href="https://instagram.com/postcardsbykaila" target="_blank">
+            <div class="contact-item__ico" style="background:#FDECEC">&#128248;</div>
+            <div><strong>Instagram</strong><span>@postcardsbykaila</span></div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item__ico" style="background:var(--pacifico-soft)">&#9993;</div>
+            <div><strong>Email</strong><span>hola@kailabrand.com</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__ico" style="background:var(--oro-soft)">&#128205;</div>
+            <div><strong>Cali, Colombia</strong><span>Valle del Cauca</span></div>
+          </div>
+          <a class="btn btn--verde" style="margin-top:8px" href="https://wa.me/573236543885" target="_blank">Start a WhatsApp conversation</a>
+        </div>
+
+        <form class="form-card">
+          <div class="form-grid">
+            <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
+            <div class="field"><label>Email</label><input type="email" placeholder="you@example.com"></div>
+            <div class="field field--full"><label>Subject</label>
+              <select>
+                <option>Order postcards</option>
+                <option>Question about a collection</option>
+                <option>Custom order (B2B)</option>
+                <option>Partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field field--full"><label>Message</label><textarea rows="6" placeholder="Hello Kaila Brand..."></textarea></div>
+          </div>
+          <button type="button" class="btn btn--tierra" style="margin-top:22px">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand"><img src="assets/img/logo-kaila-brand.png" alt="Kaila Brand logo"><span style="font-family:var(--font-display);font-size:1.7rem">Kaila <span style="color:var(--tierra)">Brand</span></span></div>
+      <p style="color:rgba(250,244,234,.7);font-size:.92rem;max-width:280px">Collectible postcards inspired by Colombia - Cali &amp; Pacific. Small works of art to send, gift and collect.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#collections">All collections</a></li>
+        <li><a href="#cali">Cali Collection</a></li>
+        <li><a href="#pacific">Pacific Collection</a></li>
+        <li><a href="#custom">Custom orders</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>The brand</h5>
+      <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#design">Brand guidelines</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Stay connected</h5>
+      <ul>
+        <li>&#128248; Instagram - <a href="https://instagram.com/postcardsbykaila" target="_blank">@postcardsbykaila</a></li>
+        <li>&#128172; WhatsApp - <a href="https://wa.me/573236543885" target="_blank">+57 323 654 3885</a></li>
+        <li>&#9993; hola@kailabrand.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>&copy; 2026 Kaila Brand - Cali, Colombia</span>
+    <span>Mockup v1.2 · EN / ES · Scalable website</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a class="wa-float" href="https://wa.me/573236543885" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.2 1.6h.6c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.3c-2 0-3.9-.6-5.6-1.6l-.4-.2-4.2 1.2 1.2-4-.3-.4c-1.1-1.8-1.7-3.9-1.7-6.1 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10.1-10 10.1zm5.5-7.6c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
