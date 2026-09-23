@@ -1,0 +1,53 @@
+KAILA BRAND — WEBSITE MOCKUP v1.2
+==================================
+
+WHAT'S IN THIS DELIVERABLE
+--------------------------
+index.html              -> Navigable prototype of ALL website pages (English)
+assets/css/styles.css   -> Full stylesheet (logo-inspired design system)
+assets/js/app.js        -> Hash-native page routing + EN/ES switcher demo
+assets/img/             -> Demo visuals (replace with real Kaila photos)
+LISEZMOI.txt            -> This file
+
+REAL CONTACT LINKS (CONFIGURED & WORKING)
+-----------------------------------------
+WhatsApp  : https://wa.me/573236543885  (+57 323 654 3885)
+            -> Floating button on ALL pages + every "Order" button +
+               contact cards + footer
+Instagram : https://instagram.com/postcardsbykaila
+            -> Contact page + footer + Custom Orders page
+Email     : hola@kailabrand.com (placeholder - confirm with client)
+
+PAGES (9)
+---------
+01. Home            -> Full-screen hero, rotating postmark stamp, featured
+                       collections, brand values, custom-order band
+02. About Us        -> Brand story, 4 values, target audiences
+03. Collections     -> Full catalog with filters + product cards
+04. Cali Collection -> Dedicated collection page (story + 8 designs)
+05. Pacific Collection -> Dedicated collection page (story + 8 designs)
+06. Custom Orders   -> 3-step process + quote request form (B2B)
+07. Our Story       -> Editorial section (3 illustrated chapters)
+08. Contact         -> Contact cards (WhatsApp/IG clickable) + full form
+09. Brand Guidelines-> Logo palette (Sepia/Cacao/Oro/Crema), typography
+                       (Fraunces + Inter), UI components
+
+NAVIGATION
+----------
+Hash-native: every link is a real anchor (e.g. #collections).
+Works even if JavaScript fails. Deep-linking supported:
+index.html#pacific opens the Pacific page directly.
+
+TO PRESENT TO THE CLIENT
+------------------------
+1. Extract the zip, double-click index.html (internet needed once for fonts).
+2. Click through the top menu or footer - pages switch without reload.
+3. Click any "Order" button to see the real WhatsApp chat open.
+4. Click Instagram cards to open @postcardsbykaila.
+
+NEXT STEPS
+----------
+1. Client validates the mockup
+2. Replace demo images with real Kaila Brand photos/illustrations
+3. Confirm email address and real product prices
+4. Phase 2: online store + admin dashboard (add cards, prices, orders)
