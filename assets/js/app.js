@@ -54,3 +54,28 @@
   /* Page initiale (deep-link : #collections, #contact...) */
   show(current());
 })();
+
+/* ---------- Menu mobile (burger) ---------- */
+(function () {
+  var burger = document.getElementById("burger");
+  var menu = document.getElementById("mobileMenu");
+  if (!burger || !menu) return;
+
+  function closeMenu() {
+    burger.classList.remove("open");
+    menu.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+  }
+
+  burger.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  /* Fermer après un clic sur un lien ou un changement de page */
+  menu.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", closeMenu);
+  });
+  window.addEventListener("hashchange", closeMenu);
+})();
